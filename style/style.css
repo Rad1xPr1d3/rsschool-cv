@@ -48,17 +48,17 @@ html, body {
 
 #my-name{
     font-family: 'Kaushan Script';
-    font-size: 100px;
+    font-size: 80px;
     color: #FFEA00;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 27px;
     display: inline-block;
 }
 h1{
     font-family: 'Fredoka One';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 19px;
     display: flex;
     align-items: center;
@@ -110,10 +110,10 @@ color: #FFFFFF;
     height: 72px;
     color: #CDCDCD;
 }
-.main-block__image{margin-top: 86px;}
+.main-block__image{}
 .image img{
     object-fit: cover;
-    width: 100%;
+    width: 80%;
     height: 100%;
     }
 
