@@ -30,10 +30,10 @@
                         </div>
                         <nav class="main-block_nav">
                             <ul>
-                                <li><a href="">About me</a></li>
-                                <li><a href="">Contacts</a></li>
-                                <li><a href="">My code</a></li>
-                                <li><a href="">Examples</a></li>
+                                <li><a href="#about-me">About me</a></li>
+                                <li><a href="#contact">Contacts</a></li>
+                                <li><a href="#my-code">My code</a></li>
+                                <li><a href="#my-project">Examples</a></li>
                             </ul>
                         </nav>
                     </div>  
@@ -48,7 +48,7 @@
 <section class="page__about about">
     <div class="about__container _container">
         <div class="about-body">
-            <div class="about-title">
+            <div class="about-title" id="about-me">
                 <h2>about me</h2>
             </div>
         <div class="about-text">
@@ -82,7 +82,7 @@
                 </div>
             </div>
             <div class="contacts _item">
-                <div class="contacts_title _title">
+                <div class="contacts_title _title" id="contact">
                     <h3>Contacts</h3>
                 </div>
                 <div class="contacts_text _subtitle">
@@ -123,8 +123,55 @@
       </div>
     </div>
 </section>
+<section class="my-code" >
+    <div class="my-code__container _container">
+        <div class="my-code__title" id="my-code">
+            <h2>my code</h2>
+        </div>
+        <div class="my-code__text">
+         
+               
+    const isPalindrome = x => x.toLowerCase() <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;  .split('').reverse() <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;  .join('') == x.toLowerCase();
+ 
+    
 
+        </div>
+    </div>
+</section>
 
+<section class="my-project" >
+    <div class="my-project__container _container">
+        <div class="my-project__title" id="my-project">
+            <h2>my projects</h2>
+        </div>
+        <div class="my-project__items">
+            <div class="my-project__item">
+                <div class="item__img">
+                </div>
+                <div class="item_text">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="my-project__item">
+                <div class="item__img">
+                </div>
+                <div class="item_text">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="my-project__item">
+                <div class="item__img">
+                </div>
+                <div class="item_text">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
 

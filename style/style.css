@@ -1,6 +1,5 @@
 /* -----Подключаем шрифты ------------------------------------------------ */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&family=Open+Sans:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&family=Open+Sans:wght@400;600&family=Space+Mono&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@ html, body {
     background: #262626;
 }
 .start-cv {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -27,7 +26,7 @@ html, body {
 
 }
 ._container{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0px auto;
     padding: 0 15px;
     box-sizing: content-box;
@@ -106,12 +105,15 @@ h3{
 .main {
     flex: 1 1 auto;
     justify-content: flex-end;
-  
+    background: -webkit-linear-gradient(135deg, rgb(38, 38, 38) 75%, rgb(255, 234, 0));
+    background: -moz-linear-gradient(135deg, rgb(38, 38, 38) 75%, rgb(255, 234, 0));
+    background: linear-gradient(135deg, rgb(38, 38, 38) 75%, rgb(255, 234, 0));
 }
 
 .main-block__container {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .main-block__body {
@@ -130,6 +132,7 @@ h3{
         
         padding-left: 95px;
         margin-top: -10px;
+        margin-bottom: 150px;
     }
         
 .main-block_skils > ul {
@@ -158,8 +161,8 @@ h3{
     font-family: 'Fredoka One';
         font-style: normal;
         font-weight: 400;
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 28px;
+        line-height: 44px;
         display: flex;
         align-items: center;
         letter-spacing: 0.12em;
@@ -167,6 +170,12 @@ h3{
     
         color: #FFFFFF
 }
+.main-block_nav>ul>li>a:hover{
+    color: #FFEA00;
+    transition: text-shadow 3s;
+    text-shadow: 0 0 10px #FFFFFF,0 0 20px #FFFFFF,0 0 30px #FFFFFF;
+}
+
 
 
 .main-block__title {
@@ -202,6 +211,7 @@ color: #FFFFFF;
     border-top: #393939 dotted 1px;
     overflow: hidden;
     padding-bottom: 30px;
+
 }
  
 .about-item {
@@ -239,7 +249,7 @@ line-height: 25px;
    
 }
 .about-title{
-    margin-top: -70px;
+    margin-top: 40px;
     text-align: center;
 }
 .about-text{
@@ -252,8 +262,76 @@ line-height: 25px;
         color: #FFFFFF;
         margin: 45px 45px;
 }
-/* ----- end About me------------------------------------------------ */
+.languages{
 
+}
+/* ----- end About me------------------------------------------------ */
+.my-code {
+    border-top: #393939 dotted 1px;
+}
+.my-code__container {
+    text-align: center;
+}
+
+.my-code__title {
+}
+.my-code__text {
+    margin: 45px auto;
+    max-width: 700px;
+    background: #4e4e4e;
+    padding: 30px;
+    font-size: 24px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.my-project {
+    border-top: #393939 dotted 1px;
+}
+.my-project__container {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.my-project__title{
+    margin-bottom: 30px;
+}
+
+.my-project__items{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.my-project__item {
+  width: 310px;
+  height: 330px;
+  padding-top: 15px;
+    background: #4e4e4e;
+    margin: 15px;
+}
+.item__img {
+    height: 220px;
+    width: 280px;
+    margin: 0 auto;
+    
+    background: #393939;
+}
+.item_text {
+    display: flex;
+
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 25px;
+    
+    align-items:flex-start;
+        letter-spacing: 0.03em;
+    
+        color: #FFFFFF;
+
+        padding-top: 10px;
+       }
 
 
 /* ----- Футер ------------------------------------------------ */
