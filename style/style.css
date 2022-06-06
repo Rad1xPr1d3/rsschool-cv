@@ -1,0 +1,372 @@
+/* -----Подключаем шрифты ------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&family=Open+Sans:wght@400;600&family=Space+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+html, body {
+    height: 100%;
+    line-height: 24px;
+    font-size: 30px;
+    background: #262626;
+}
+.start-cv {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+._container{
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+a {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold
+}
+
+a:hover {
+    font-size: 16px;
+    color: #FFEA00;
+    font-weight: bold
+}
+
+li {
+    list-style-position: inside;
+}
+
+/* -----Шапка------------------------------------------------ */
+.header{
+    position: relative;
+    width: 100%;
+    left: 0;
+    z-index: 50;
+}
+.header__container{
+    display: flex;
+  
+    min-height: 60px;
+    align-items: flex-start;
+}
+
+#my-name{
+    font-family: 'Kaushan Script';
+    font-size: 80px;
+    color: #FFEA00;
+    margin-top: 60px;
+    margin-bottom: 27px;
+    display: inline-block;
+}
+h1{
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.26);
+    margin-left: 5px;
+}
+h2{
+    font-family: 'Kaushan Script';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 160px;
+        line-height: 108.4%; 
+        color: rgba(255, 255, 255, 0.1);
+}
+h3{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 18px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFEA00;
+}
+
+/* ----- end Шапка------------------------------------------------ */
+/* ----- Первая страница------------------------------------------------ */
+.main {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    background: -webkit-linear-gradient(135deg, rgb(38, 38, 38) 75%, rgb(255, 234, 0));
+    background: -moz-linear-gradient(135deg, rgb(38, 38, 38) 75%, rgb(255, 234, 0));
+    background: linear-gradient(135deg, rgb(38, 38, 38) 75%, rgb(255, 234, 0));
+}
+
+.main-block__container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main-block__body {
+    max-width: 460px;
+    max-height: 322px;
+}
+
+.main-block_skils {
+    font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 19px;
+        display: flex;
+        letter-spacing: 0.12em;  
+        
+        padding-left: 95px;
+        margin-top: -10px;
+        margin-bottom: 150px;
+    }
+        
+.main-block_skils > ul {
+    list-style: none;
+
+}
+.main-block_skils > ul > li {
+    clear: both;
+    color: #FFFFFF;
+}
+
+.main-block_skils>ul>li>b {
+    clear: both;
+    color: #FFEA00;
+}
+
+.main-block_nav {}
+.main-block_nav > ul {
+    list-style: none;
+}
+.main-block_nav > ul > li {
+    clear: both;
+}
+.main-block_nav>ul>li>a {
+    text-decoration: none;
+    font-family: 'Fredoka One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 44px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF
+}
+.main-block_nav>ul>li>a:hover{
+    color: #FFEA00;
+    transition: text-shadow 3s;
+    text-shadow: 0 0 10px #FFFFFF,0 0 20px #FFFFFF,0 0 30px #FFFFFF;
+}
+
+
+
+.main-block__title {
+font-family: 'Georgia Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 130%;
+width: 310px;
+height: 114px;
+color: #FFFFFF;
+}
+.main-block__text {
+    font-family: 'Arial Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    height: 72px;
+    color: #CDCDCD;
+}
+.main-block__image{
+
+}
+.image img{
+    object-fit: cover;
+    width: 80%;
+    height: 100%;
+    }
+/* ----- end Первая страница------------------------------------------------ */
+/* ----- About me------------------------------------------------ */
+.page__about {
+    border-top: #393939 dotted 1px;
+    overflow: hidden;
+    padding-bottom: 30px;
+
+}
+ 
+.about-item {
+    display: flex;
+    flex-wrap: wrap;
+justify-content:space-evenly;
+}
+
+.about__container {}
+
+._item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;  
+    
+    flex-direction: column;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 25px;
+    
+    align-items:flex-start;
+        letter-spacing: 0.03em;
+    
+        color: #FFFFFF;
+
+        margin: 30px 45px;
+}
+._title{
+margin-bottom: 15px;
+}
+.subtitle{
+line-height: 25px;
+}
+.about-body {
+   
+}
+.about-title{
+    margin-top: 40px;
+    text-align: center;
+}
+.about-text{
+    font-family: 'Open Sans';
+        font-size: 18px;
+        line-height: 168.4%;
+        display: flex;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        margin: 45px 45px;
+}
+.languages{
+
+}
+/* ----- end About me------------------------------------------------ */
+.my-code {
+    border-top: #393939 dotted 1px;
+}
+.my-code__container {
+    text-align: center;
+}
+
+.my-code__title {
+}
+.my-code__text {
+    margin: 45px auto;
+    max-width: 700px;
+    background: #4e4e4e;
+    padding: 30px;
+    font-size: 24px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.my-project {
+    border-top: #393939 dotted 1px;
+}
+.my-project__container {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.my-project__title{
+    margin-bottom: 30px;
+}
+
+.my-project__items{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.my-project__item {
+  width: 310px;
+  height: 330px;
+  padding-top: 15px;
+    background: #4e4e4e;
+    margin: 15px;
+}
+.item__img {
+    height: 220px;
+    width: 280px;
+    margin: 0 auto;
+    
+    background: #393939;
+}
+.item_text {
+    display: flex;
+
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 25px;
+    
+    align-items:flex-start;
+        letter-spacing: 0.03em;
+    
+        color: #FFFFFF;
+
+        padding-top: 10px;
+       }
+
+
+/* ----- Футер ------------------------------------------------ */
+.footer {
+    border-top: #393939 dotted 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+.footer img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    }
+
+.footer-links {
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+    
+    
+.footer-year {
+    padding-bottom: 15px;
+        font-family: 'Fredoka One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            display: flex;
+            text-align: center;
+            letter-spacing: 0.14em;
+            color: rgba(255, 255, 255, 0.26);
+}
+/* ----- end Футер ------------------------------------------------ */

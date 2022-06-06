@@ -1,23 +1,198 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Andrei Korehskov</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Korehskov Andrei - CV</title>
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link type="image/x-icon" href="./img/svg/clever.png" rel="shortcut icon">
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            Header
+
+    <div class="start-cv">
+        <header class="header _container">
+            <span id="my-name">Koreshkov Andrei</span>
+            <H1>FRONT-END DEVELOPER</H1>
         </header>
         <main class="main">
-            <p>It's me</p> <br>
-            <img src="img\Im.jpg" alt="my photo" width="250px">
+
+                <div class="main-block__container _container">
+                    <div class="main-block__body">
+                        <div class="main-block_skils">
+                            <ul>
+                                <li> <b>></b> HTML 5 / CSS 3</li>
+                                <li> <b>></b> JavaScript ES6</li>
+                                <li> <b>></b> Git / GitHub</li>
+                            </ul>
+                        </div>
+                        <nav class="main-block_nav">
+                            <ul>
+                                <li><a href="#about-me">About me</a></li>
+                                <li><a href="#contact">Contacts</a></li>
+                                <li><a href="#my-code">My code</a></li>
+                                <li><a href="#my-project">Examples</a></li>
+                            </ul>
+                        </nav>
+                    </div>  
+                    <div class="main-block__image image">
+                        <img src="./img/Im-removebg-previewPS2.png" alt="my photo">
+                    </div> 
+                </div>
+
         </main>
+    </div>
+
+<section class="page__about about">
+    <div class="about__container _container">
+        <div class="about-body">
+            <div class="about-title" id="about-me">
+                <h2>about me</h2>
+            </div>
+        <div class="about-text">
+            I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly,
+            helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a
+            team setting. I am outgoing and tactful, and able to listen effectively when solving problems.
+        </div> 
+        <div class="about-item">
+        <div class="about-exrince _item">
+            <div class="about-exrince_title _title">
+                <h3>Experience</h3>
+            </div>
+            <div class="about-exrince_text _subtitle">
+                For 9 years of work experience, I have held various positions from a <strong>system administrator</strong> (2 years) in a retail chain to
+                <strong>a retail chain manager</strong> (1 year) and <strong>a head of housing and communal services</strong> (1 year). At the moment I am engaged in
+                foreign economic activity.
+            </div>
+        </div>
+      
+            <div class="education _item">
+                 <div class="educatio_title _title">
+                      <h3>Education</h3>      
+                </div>
+                <div class="educatio_text _subtitle">
+                    <ol>
+                        <li><strong>engineering technology</strong>, <br>
+                        <a target="_blank" href="https://www.gstu.by/">Sukhoi State Technical University of Gomel</a></li>
+                        <li><strong>economist-manager</strong>, <br>
+                        <a target="_blank" href="http://www.i-bteu.by/">Belorussian trade-economic university of consumer cooperation</a> </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="contacts _item">
+                <div class="contacts_title _title" id="contact">
+                    <h3>Contacts</h3>
+                </div>
+                <div class="contacts_text _subtitle">
+                        <ul>
+                            <li>Location: <a target="_blank" href="https://g.page/inkons_pvt?share"> Minsk, Belarus</a></li>
+                            <li>  <a target="_blank" href="andrey.koreshkoff@gmail.com">andrey.koreshkoff@gmail.com</a> </li>
+                            <li>GitHub: <a target="_blank" href="https://github.com/Rad1xPr1d3"> Rad1xPr1d3</a> </li>
+                            <li><a target="_blank" href="tel:+375292331610">+375 (29) 233 16 10 </a>(viber, telegram, WhatsApp) </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="curse _item">
+                <div class="curse_title _title">
+                <h3>IT Courses</h3>
+                </div>
+                <div class="curse_text _subtitle">
+                <ol>
+                    <li>CS50 lectures</li>
+                    <li>HTML Academy</li>
+                    <li><strong>RS School: JS/Front-end</strong>. Stage 0</li>
+                </ol>
+                </div>
+            </div>
+
+        
+            <div class="languages _item">
+                <div class="languages_title _title">
+                    <h3>Languages</h3>
+                </div>
+                <div class="languages_text _subtitle">
+                    <ul>
+                        <li>English - A2</li>
+                        <li>Russian - Native</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="my-code" >
+    <div class="my-code__container _container">
+        <div class="my-code__title" id="my-code">
+            <h2>my code</h2>
+        </div>
+        <div class="my-code__text">
+         
+               
+    const isPalindrome = x => x.toLowerCase() <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;  .split('').reverse() <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;  .join('') == x.toLowerCase();
+ 
+    
+
+        </div>
+    </div>
+</section>
+
+<section class="my-project" >
+    <div class="my-project__container _container">
+        <div class="my-project__title" id="my-project">
+            <h2>my projects</h2>
+        </div>
+        <div class="my-project__items">
+            <div class="my-project__item">
+                <div class="item__img">
+                </div>
+                <div class="item_text">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="my-project__item">
+                <div class="item__img">
+                </div>
+                <div class="item_text">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="my-project__item">
+                <div class="item__img">
+                </div>
+                <div class="item_text">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
         <footer class="footer">
-            Footer
+            <div class="footer-links _container">
+                            <a target="_blank" href="https://rs.school/js/">
+                                <img src="./img/svg/footer-icon-rsschoo_yell.svg" alt="">
+                            </a>
+                            <a target="_blank" href="https://github.com/Rad1xPr1d3">
+                                <img src="./img/svg/footer-icon-github.svg" alt="">
+                            </a>
+                            <a target="_blank" href="https://vk.com/a.koreshkoff">
+                                <img src="./img/svg/footer-icon-vk.svg" alt="">
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/a.koreshkoff/">
+                                <img src="./img/svg/footer-icon-instagram.svg" alt="">
+                            </a>
+            </div>
+            <div class="footer-year _container">
+                &copy;   2022  Andrey Koreshkov
+            </div>
         </footer>
     </div>
 </body>
