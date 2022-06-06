@@ -32,7 +32,23 @@ html, body {
     padding: 0 15px;
     box-sizing: content-box;
 }
+a {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold
+}
 
+a:hover {
+    font-size: 16px;
+    color: #FFEA00;
+    font-weight: bold
+}
+
+li {
+    list-style-position: inside;
+}
+
+/* -----Шапка------------------------------------------------ */
 .header{
     position: relative;
     width: 100%;
@@ -67,9 +83,26 @@ h1{
     color: rgba(255, 255, 255, 0.26);
     margin-left: 5px;
 }
+h2{
+    font-family: 'Kaushan Script';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 160px;
+        line-height: 108.4%; 
+        color: rgba(255, 255, 255, 0.1);
+}
+h3{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 18px;
 
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFEA00;
+}
 
-
+/* ----- end Шапка------------------------------------------------ */
+/* ----- Первая страница------------------------------------------------ */
 .main {
     flex: 1 1 auto;
     justify-content: flex-end;
@@ -84,12 +117,57 @@ h1{
 .main-block__body {
     max-width: 460px;
     max-height: 322px;
-    padding: 345px 0 0 0;
 }
 
-.main-block__body > *:not(:last-child){
-    margin: 0px 0px 39px 0px;
+.main-block_skils {
+    font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 19px;
+        display: flex;
+        letter-spacing: 0.12em;  
+        
+        padding-left: 95px;
+        margin-top: -10px;
+    }
+        
+.main-block_skils > ul {
+    list-style: none;
+
 }
+.main-block_skils > ul > li {
+    clear: both;
+    color: #FFFFFF;
+}
+
+.main-block_skils>ul>li>b {
+    clear: both;
+    color: #FFEA00;
+}
+
+.main-block_nav {}
+.main-block_nav > ul {
+    list-style: none;
+}
+.main-block_nav > ul > li {
+    clear: both;
+}
+.main-block_nav>ul>li>a {
+    text-decoration: none;
+    font-family: 'Fredoka One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF
+}
+
 
 .main-block__title {
 font-family: 'Georgia Regular';
@@ -110,24 +188,107 @@ color: #FFFFFF;
     height: 72px;
     color: #CDCDCD;
 }
-.main-block__image{}
+.main-block__image{
+
+}
 .image img{
     object-fit: cover;
     width: 80%;
     height: 100%;
     }
-
-.footer {
-    border-top: #CDCDCD dotted 1px;
-    height: 80px;
-    
-    display: flex;
-    justify-content: space-evenly;
-    box-sizing:border-box;
-    padding: 15px auto;
+/* ----- end Первая страница------------------------------------------------ */
+/* ----- About me------------------------------------------------ */
+.page__about {
+    border-top: #393939 dotted 1px;
+    overflow: hidden;
+    padding-bottom: 30px;
 }
+ 
+.about-item {
+    display: flex;
+    flex-wrap: wrap;
+justify-content:space-evenly;
+}
+
+.about__container {}
+
+._item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;  
+    
+    flex-direction: column;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 25px;
+    
+    align-items:flex-start;
+        letter-spacing: 0.03em;
+    
+        color: #FFFFFF;
+
+        margin: 30px 45px;
+}
+._title{
+margin-bottom: 15px;
+}
+.subtitle{
+line-height: 25px;
+}
+.about-body {
+   
+}
+.about-title{
+    margin-top: -70px;
+    text-align: center;
+}
+.about-text{
+    font-family: 'Open Sans';
+        font-size: 18px;
+        line-height: 168.4%;
+        display: flex;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        margin: 45px 45px;
+}
+/* ----- end About me------------------------------------------------ */
+
+
+
+/* ----- Футер ------------------------------------------------ */
+.footer {
+    border-top: #393939 dotted 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
 .footer img{
     object-fit: cover;
     width: 100%;
     height: 100%;
     }
+
+.footer-links {
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+    
+    
+.footer-year {
+    padding-bottom: 15px;
+        font-family: 'Fredoka One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            display: flex;
+            text-align: center;
+            letter-spacing: 0.14em;
+            color: rgba(255, 255, 255, 0.26);
+}
+/* ----- end Футер ------------------------------------------------ */
